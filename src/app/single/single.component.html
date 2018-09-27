@@ -1,0 +1,9 @@
+<div>
+	<ul *ngIf="contact">
+		<li>Name: {{contact.name}}</li>
+		<li>Number: 0{{contact.number}}</li>
+		<li>Email: {{contact.email}}</li>
+	</ul>
+	<a routerLink="/edit/{{id}}" class="button is-primary">Edit</a>
+	<a routerLink="/delete/{{id}}" class="button is-danger">Delete</a>
+</div>

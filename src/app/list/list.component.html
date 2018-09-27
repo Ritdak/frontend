@@ -1,0 +1,18 @@
+
+
+<div class= "is-multiline">
+	<h1>Contact list <a routerLink="/create" class="button is-rounded is-danger">Add</a></h1>
+ <table class="table is-hoverable table is-fullwidth">
+	<thead>
+		<tr>
+			<th> Contacts</th>
+		</tr>
+	</thead>
+	<tbody *ngIf="contacts">
+		<tr *ngFor="let contact of contacts">
+			<td><a routerLink="/single/{{contact._id}}">{{contact.name}}</a></td>
+		</tr>
+	</tbody>
+ </table>
+</div>
+
